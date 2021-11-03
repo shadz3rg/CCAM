@@ -201,28 +201,6 @@ F 3 "~" H 3150 2300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Transistor_BJT:2N3904 Q1
-U 1 1 6182A9AC
-P 3700 2000
-F 0 "Q1" H 3890 1954 50  0000 L CNN
-F 1 "2N3904" H 3890 2045 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3900 1925 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3700 2000 50  0001 L CNN
-	1    3700 2000
-	1    0    0    1   
-$EndComp
-$Comp
-L Transistor_BJT:2N3904 Q3
-U 1 1 6182C78B
-P 3700 3950
-F 0 "Q3" H 3890 3996 50  0000 L CNN
-F 1 "2N3904" H 3890 3905 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3900 3875 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3700 3950 50  0001 L CNN
-	1    3700 3950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R13
 U 1 1 6182E452
 P 4500 1850
@@ -580,7 +558,7 @@ U 2 1 61855B01
 P 8450 4700
 F 0 "U1" H 8450 4333 50  0000 C CNN
 F 1 "RC4558" H 8450 4424 50  0000 C CNN
-F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 8450 4700 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8450 4700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/rc4558.pdf" H 8450 4700 50  0001 C CNN
 	2    8450 4700
 	1    0    0    1   
@@ -591,10 +569,10 @@ U 3 1 6185A415
 P 6150 2250
 F 0 "U1" H 5962 2204 50  0000 R CNN
 F 1 "RC4558" H 5962 2295 50  0000 R CNN
-F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 6150 2250 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6150 2250 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/rc4558.pdf" H 6150 2250 50  0001 C CNN
 	3    6150 2250
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:+5V #DC01
@@ -684,17 +662,6 @@ Wire Wire Line
 	2500 2000 2200 2000
 Wire Wire Line
 	2800 2000 2950 2000
-$Comp
-L Transistor_BJT:2N3904 Q2
-U 1 1 6182BB58
-P 3700 2850
-F 0 "Q2" H 3890 2804 50  0000 L CNN
-F 1 "2N3904" H 3890 2895 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3900 2775 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3700 2850 50  0001 L CNN
-	1    3700 2850
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	2950 2000 2950 2300
 Wire Wire Line
@@ -835,17 +802,6 @@ Wire Wire Line
 Connection ~ 5150 5400
 Wire Wire Line
 	3300 4500 3800 4500
-$Comp
-L Transistor_BJT:2N3904 Q4
-U 1 1 6182D24C
-P 3700 4800
-F 0 "Q4" H 3890 4846 50  0000 L CNN
-F 1 "2N3904" H 3890 4755 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3900 4725 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3700 4800 50  0001 L CNN
-	1    3700 4800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2950 4800 3500 4800
 Wire Wire Line
@@ -1094,7 +1050,7 @@ U 1 1 61849EF9
 P 8450 1900
 F 0 "U1" H 8450 2267 50  0000 C CNN
 F 1 "RC4558" H 8450 2176 50  0000 C CNN
-F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 8450 1900 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8450 1900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/rc4558.pdf" H 8450 1900 50  0001 C CNN
 	1    8450 1900
 	1    0    0    -1  
@@ -1138,17 +1094,6 @@ F 3 "" H 6250 2550 50  0001 C CNN
 	1    6250 2550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x01_Female J9
-U 1 1 61C36AC5
-P 6800 5400
-F 0 "J9" H 6828 5426 50  0000 L CNN
-F 1 "GNDin" H 6828 5335 50  0000 L CNN
-F 2 "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm" H 6800 5400 50  0001 C CNN
-F 3 "~" H 6800 5400 50  0001 C CNN
-	1    6800 5400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6600 5400 6450 5400
 Connection ~ 6450 5400
@@ -1184,4 +1129,70 @@ Wire Wire Line
 	4500 1600 4700 1600
 Wire Wire Line
 	2350 3950 2350 4000
+$Comp
+L Device:R R35
+U 1 1 61960AA8
+P 6750 5400
+F 0 "R35" V 6543 5400 50  0000 C CNN
+F 1 "R" V 6634 5400 50  0000 C CNN
+F 2 "" V 6680 5400 50  0001 C CNN
+F 3 "~" H 6750 5400 50  0001 C CNN
+	1    6750 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J9
+U 1 1 61C36AC5
+P 7100 5400
+F 0 "J9" H 7128 5426 50  0000 L CNN
+F 1 "GNDin" H 7128 5335 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm" H 7100 5400 50  0001 C CNN
+F 3 "~" H 7100 5400 50  0001 C CNN
+	1    7100 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q1
+U 1 1 61AADB55
+P 3700 2000
+F 0 "Q1" H 3891 1954 50  0000 L CNN
+F 1 "MMBT3904" H 3891 2045 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3900 1925 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3700 2000 50  0001 L CNN
+	1    3700 2000
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q2
+U 1 1 61AB5C5E
+P 3700 2850
+F 0 "Q2" H 3891 2804 50  0000 L CNN
+F 1 "MMBT3904" H 3891 2895 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3900 2775 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3700 2850 50  0001 L CNN
+	1    3700 2850
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q3
+U 1 1 61ABE08F
+P 3700 3950
+F 0 "Q3" H 3891 3996 50  0000 L CNN
+F 1 "MMBT3904" H 3891 3905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3900 3875 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3700 3950 50  0001 L CNN
+	1    3700 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q4
+U 1 1 61ABF4FE
+P 3700 4800
+F 0 "Q4" H 3891 4846 50  0000 L CNN
+F 1 "MMBT3904" H 3891 4755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3900 4725 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3700 4800 50  0001 L CNN
+	1    3700 4800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
