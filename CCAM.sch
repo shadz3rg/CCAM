@@ -1094,8 +1094,6 @@ F 3 "" H 6250 2550 50  0001 C CNN
 	1    6250 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6600 5400 6450 5400
 Connection ~ 6450 5400
 Wire Wire Line
 	6450 5400 6450 5600
@@ -1134,8 +1132,8 @@ L Device:R R35
 U 1 1 61960AA8
 P 6750 5400
 F 0 "R35" V 6543 5400 50  0000 C CNN
-F 1 "R" V 6634 5400 50  0000 C CNN
-F 2 "" V 6680 5400 50  0001 C CNN
+F 1 "0" V 6634 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6680 5400 50  0001 C CNN
 F 3 "~" H 6750 5400 50  0001 C CNN
 	1    6750 5400
 	0    1    1    0   
@@ -1195,4 +1193,6 @@ F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3700 4800 50  0001 L 
 	1    3700 4800
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6450 5400 6600 5400
 $EndSCHEMATC
